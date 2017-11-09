@@ -1,0 +1,53 @@
+body {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: #eee;
+  background: url('/images/splash.jpg') no-repeat   center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  color:#fefefe;
+  text-align:center;
+}
+.form-shorten {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-shorten .form-shorten-heading {
+  margin-bottom: 10px;
+}
+.form-shorten .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-shorten .form-control:focus {
+  z-index: 2;
+}
+.form-shorten input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.credit {
+  margin-top:12px;
+  color: #ccc;
+  font-size: 12px;
+}
+.result {
+  max-width: 330px;
+  margin: 0 auto;
+}
+.result a {
+  color: #00faff;
+}
+.error {
+  max-width: 330px;
+  margin: 0 auto;
+  color:red;
+}
+

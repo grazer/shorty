@@ -1,0 +1,14 @@
+@(shortLink:String = "", error:String="")
+@layouts.html.default("Shorty: a tiny url shortener"){
+    <div class="container">
+      <form class="form-shorten" action="/" method="POST">
+        <h2 class="form-shorten-heading">Shorten any URL.</h2>
+        <label for="URL" class="sr-only">URL here</label>
+        <input type="text" id="URL" name="URL" class="form-control" placeholder="URL to shorten." required autofocus>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Shorten It!</button>
+        <div class="credit">Photo by Casey Horner on Unsplash</div>
+      </form>
+      <h2 class="result"><a href="@shortLink" target="_blank">@shortLink</a></h2>
+      <h4 class="error">@error</h4>
+    </div> 
+}
