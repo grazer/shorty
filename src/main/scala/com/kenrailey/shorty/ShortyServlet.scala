@@ -1,7 +1,7 @@
 package com.kenrailey.shorty
 
 import org.scalatra._
-import slick.jdbc.MySQLProfile.api._
+import slick.jdbc.H2Profile.api._
 
 
 /**
@@ -88,6 +88,11 @@ class ShortyServlet(db:Database) extends ScalatraServlet with FutureSupport {
    * obviously a production site wouldn't have this
    */
   get("/create-db") {
-     db.run(Tables.links.schema.create)
+    try {
+      db.run(Tables.links.schema.create)
+    } catch {
+      case e:Exception => views.html.index("","Link invalid") 
+    }
+    views.html.index() 
   }
 }

@@ -3,8 +3,7 @@ import com.mchange.v2.c3p0.ComboPooledDataSource
 import javax.servlet.ServletContext
 import org.scalatra._
 import org.slf4j.LoggerFactory
-import slick.jdbc.MySQLProfile.api._
-
+import slick.jdbc.H2Profile.api._
 
 /**
  * Provide basic DB connection and setup
